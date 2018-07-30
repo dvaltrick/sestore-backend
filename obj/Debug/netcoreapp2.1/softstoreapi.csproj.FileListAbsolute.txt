@@ -1,0 +1,14 @@
+C:\Users\Diego\Documents\Code\SoftExpert\backend\softstoreapi\bin\Debug\netcoreapp2.1\softstoreapi.deps.json
+C:\Users\Diego\Documents\Code\SoftExpert\backend\softstoreapi\bin\Debug\netcoreapp2.1\softstoreapi.runtimeconfig.json
+C:\Users\Diego\Documents\Code\SoftExpert\backend\softstoreapi\bin\Debug\netcoreapp2.1\softstoreapi.runtimeconfig.dev.json
+C:\Users\Diego\Documents\Code\SoftExpert\backend\softstoreapi\bin\Debug\netcoreapp2.1\softstoreapi.dll
+C:\Users\Diego\Documents\Code\SoftExpert\backend\softstoreapi\bin\Debug\netcoreapp2.1\softstoreapi.pdb
+C:\Users\Diego\Documents\Code\SoftExpert\backend\softstoreapi\obj\Debug\netcoreapp2.1\softstoreapi.csprojAssemblyReference.cache
+C:\Users\Diego\Documents\Code\SoftExpert\backend\softstoreapi\obj\Debug\netcoreapp2.1\softstoreapi.csproj.CoreCompileInputs.cache
+C:\Users\Diego\Documents\Code\SoftExpert\backend\softstoreapi\obj\Debug\netcoreapp2.1\softstoreapi.RazorAssemblyInfo.cache
+C:\Users\Diego\Documents\Code\SoftExpert\backend\softstoreapi\obj\Debug\netcoreapp2.1\softstoreapi.RazorAssemblyInfo.cs
+C:\Users\Diego\Documents\Code\SoftExpert\backend\softstoreapi\obj\Debug\netcoreapp2.1\softstoreapi.AssemblyInfoInputs.cache
+C:\Users\Diego\Documents\Code\SoftExpert\backend\softstoreapi\obj\Debug\netcoreapp2.1\softstoreapi.AssemblyInfo.cs
+C:\Users\Diego\Documents\Code\SoftExpert\backend\softstoreapi\obj\Debug\netcoreapp2.1\softstoreapi.RazorTargetAssemblyInfo.cache
+C:\Users\Diego\Documents\Code\SoftExpert\backend\softstoreapi\obj\Debug\netcoreapp2.1\softstoreapi.dll
+C:\Users\Diego\Documents\Code\SoftExpert\backend\softstoreapi\obj\Debug\netcoreapp2.1\softstoreapi.pdb
