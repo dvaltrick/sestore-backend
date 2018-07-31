@@ -37,6 +37,20 @@ namespace softstoreapi.Controllers
             }
         }
 
+        [HttpPost("addimposto")]
+        public ActionResult<TipoProdutoImposto> AddImposto([FromServices] TipoProdutoDAO dao,
+                                                            [FromBody]TipoProdutoImposto value)
+        {
+            try
+            {
+                return dao.AddImposto(value);
+            }
+            catch (Exception e)
+            {
+                return new StatusCodeResult(400);
+            }
+        }
+
         // PUT api/values/5
         [HttpPut]
         public ActionResult<TipoProduto> Put([FromServices] TipoProdutoDAO dao, 
@@ -60,5 +74,21 @@ namespace softstoreapi.Controllers
                 return new StatusCodeResult(400);
             }
         }
+
+        [HttpPost("removeimposto")]
+        public ActionResult RemoveImposto([FromServices] TipoProdutoDAO dao, 
+                                          [FromBody] TipoProdutoImposto value )
+        {
+            try
+            {
+                dao.RemoveImposto(value);
+                return new StatusCodeResult(200);
+            }
+            catch (Exception e)
+            {
+                return new StatusCodeResult(400);
+            }
+        }
+
     }
 }

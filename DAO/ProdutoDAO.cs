@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Collections.ObjectModel;
 using softstoreapi.Database;
+using Microsoft.EntityFrameworkCore;
 
 namespace softstoreapi.DAO
 {
@@ -62,7 +63,7 @@ namespace softstoreapi.DAO
             {
                 using (var db = new DBContext())
                 {
-                    return db.Produtos.ToArray();
+                    return db.Produtos.Include(p => p.Tipo).ToArray();
                 }
             }
             catch (Exception e)

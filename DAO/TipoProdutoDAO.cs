@@ -44,6 +44,38 @@ namespace softstoreapi.DAO
             
         }
 
+        public TipoProdutoImposto AddImposto(TipoProdutoImposto toAdd) {
+            try {
+                using (var db = new DBContext())
+                {
+                    db.TipoProdutoImposto.Add(toAdd);
+                    db.SaveChanges();
+                    return toAdd;
+                }
+            }catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw new Exception("Não foi possível realizar a operação.");
+            }
+        }
+
+        public void RemoveImposto(TipoProdutoImposto toRemove) {
+            try
+            {
+                using (var db = new DBContext())
+                {
+                    var encontrado = db.TipoProdutoImposto.FirstOrDefault(t => t.ImpostoId == toRemove.ImpostoId && t.TipoProdutoId == toRemove.TipoProdutoId);
+                    db.TipoProdutoImposto.Remove(encontrado);
+                    db.SaveChanges();
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw new Exception("Não foi possível realizar a operação.");
+            }
+        }
+
         public void Delete(int toDeleteId)
         {
             try
@@ -111,6 +143,7 @@ namespace softstoreapi.DAO
                 using (var db = new DBContext())
                 {
                     db.TiposProduto.Update(toUpdate);
+
                     db.SaveChanges();
 
                     return toUpdate;
