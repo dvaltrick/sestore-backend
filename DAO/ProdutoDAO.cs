@@ -63,7 +63,10 @@ namespace softstoreapi.DAO
             {
                 using (var db = new DBContext())
                 {
-                    return db.Produtos.Include(p => p.Tipo).ToArray();
+                    return db.Produtos.Include(p => p.Tipo)
+                                      .ThenInclude(i => i.TiposProdutosImpostos)
+                                      .ThenInclude(i => i.Imposto)
+                                      .ToArray();
                 }
             }
             catch (Exception e)

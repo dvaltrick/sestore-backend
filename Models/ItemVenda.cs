@@ -13,6 +13,8 @@ namespace softstoreapi.Models
 
         public float Quantidade { get; set; }
 
+        public float TotalImpostos { get; set; }
+
         public float TotalItem { get; set; }
 
         public ItemVenda(Produto produto, float quantidade, float totalItem) {

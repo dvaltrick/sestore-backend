@@ -12,6 +12,8 @@ namespace softstoreapi.Models
 
         public ObservableCollection<ItemVenda> Itens { get; set; } = new ObservableCollection<ItemVenda>();
 
+        public float TotalImpostos { get; set; }
+
         public float Total { get; set; }
 
         public Venda(ObservableCollection<ItemVenda> itens, float total) {
