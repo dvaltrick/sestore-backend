@@ -13,16 +13,29 @@ namespace softstoreapi.Controllers
     public class TiposProdutosController
     {
         [HttpGet]
-        public IEnumerable<TipoProduto> Get([FromServices] TipoProdutoDAO dao)
+        public ActionResult<IEnumerable<TipoProduto>> Get([FromServices] TipoProdutoDAO dao)
         {
-            return dao.Get();
+            try
+            {
+                return dao.Get().ToList();
+            }
+            catch (Exception e) {
+                return new StatusCodeResult(400);
+            }
+            
         }
 
         // GET api/values/5
         [HttpGet("{id}")]
-        public TipoProduto Get([FromServices] TipoProdutoDAO dao, int id)
+        public ActionResult<TipoProduto> Get([FromServices] TipoProdutoDAO dao, int id)
         {
-            return dao.Get(id);
+            try
+            {
+                return dao.Get(id);
+            }
+            catch (Exception e) {
+                return new StatusCodeResult(400);
+            }
         }
 
         // POST api/values

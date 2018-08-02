@@ -13,16 +13,29 @@ namespace softstoreapi.Controllers
     public class ImpostosController
     {
         [HttpGet]
-        public IEnumerable<Imposto> Get([FromServices] ImpostoDAO dao)
+        public ActionResult<IEnumerable<Imposto>> Get([FromServices] ImpostoDAO dao)
         {
-            return dao.Get();
+            try
+            {
+                return dao.Get().ToList();
+            }
+            catch (Exception e) {
+                return new StatusCodeResult(400);
+            }
+
         }
 
         // GET api/values/5
         [HttpGet("{id}")]
-        public Imposto Get([FromServices] ImpostoDAO dao, int id)
+        public ActionResult<Imposto> Get([FromServices] ImpostoDAO dao, int id)
         {
-            return dao.Get(id);
+            try
+            {
+                return dao.Get(id);
+            }
+            catch (Exception e) {
+                return new StatusCodeResult(400);
+            }
         }
 
         // POST api/values
