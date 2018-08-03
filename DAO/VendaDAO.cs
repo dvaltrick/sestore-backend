@@ -44,7 +44,7 @@ namespace softstoreapi.DAO
                     var venda = db.Vendas.Find(toDeleteId);
                     if (venda == null)
                     {
-                        throw new Exception("Produto não encontrado");
+                        throw new Exception("Venda não encontrada");
                     }
                     else {
                         db.Vendas.Remove(venda);

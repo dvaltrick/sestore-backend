@@ -1,0 +1,7 @@
+﻿{
+  "server": "localhost",
+  "port": 5432,
+  "database": "softstore",
+  "user": "postgres",
+  "password": "postgre"
+}

@@ -10,7 +10,7 @@ namespace softstoreapi.DAO
 {
     public class ImpostoDAO : IDAO<Imposto>
     {
-        public Imposto Add(Imposto toAdd)
+        public virtual Imposto Add(Imposto toAdd)
         {
             try
             {

@@ -11584,23 +11584,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Diego\\.nuget\\packages\\": {},
+    "C:\\Users\\diego.valtrick\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Diego\\Documents\\Code\\SoftExpert\\backend\\softstoreapi\\softstoreapi.csproj",
+      "projectUniqueName": "C:\\Git\\c\\sestore-backend\\softstoreapi.csproj",
       "projectName": "softstoreapi",
-      "projectPath": "C:\\Users\\Diego\\Documents\\Code\\SoftExpert\\backend\\softstoreapi\\softstoreapi.csproj",
-      "packagesPath": "C:\\Users\\Diego\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Diego\\Documents\\Code\\SoftExpert\\backend\\softstoreapi\\obj\\",
+      "projectPath": "C:\\Git\\c\\sestore-backend\\softstoreapi.csproj",
+      "packagesPath": "C:\\Users\\diego.valtrick\\.nuget\\packages\\",
+      "outputPath": "C:\\Git\\c\\sestore-backend\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Diego\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\diego.valtrick\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -11608,7 +11608,8 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://nuget.telerik.com/nuget": {}
       },
       "frameworks": {
         "netcoreapp2.1": {

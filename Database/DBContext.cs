@@ -32,7 +32,9 @@ namespace softstoreapi.Database
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             base.OnConfiguring(optionsBuilder);
-            optionsBuilder.UseNpgsql("Server=localhost;Port=5432;Database=softstore;User Id=postgres;Password=postgres;");
+            var config = DBConfigService.Carregar();
+            //optionsBuilder.UseNpgsql("Server=localhost;Port=5432;Database=softstore;User Id=postgres;Password=postgre;");
+            optionsBuilder.UseNpgsql($"Server={config.Server};Port={config.Port};Database={config.Database};User Id={config.User};Password={config.Password};");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

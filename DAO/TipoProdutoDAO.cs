@@ -85,7 +85,7 @@ namespace softstoreapi.DAO
                     var tipo = db.TiposProduto.Find(toDeleteId);
                     if (tipo == null)
                     {
-                        throw new Exception("Imposto não encontrado");
+                        throw new Exception("Tipo de produto não encontrado");
                     }
                     else {
                         db.TiposProduto.Remove(tipo);
